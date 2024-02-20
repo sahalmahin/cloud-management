@@ -1,7 +1,38 @@
+import { MdMenu } from "react-icons/md";
+import { AiOutlineClose } from "react-icons/ai";
+
 const Navbar = () => {
     return (
-        <div>
-            <h3 className="text-5xl">Navbar will be detected</h3>
+        <div className="w-screen h-[80px] bg-zinc-200 drop-shadow-lg fixed">
+            <div className="px-2 flex justify-between items-center w-full h-full">
+                <div className="flex items-center">
+                    <h1 className="text-3xl sm:text-4xl font-bold mr-4">Brand.</h1>
+                    <ul className="hidden md:flex">
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Pricing</li>
+                        <li>Platform</li>
+                        <li>Pricing</li>
+                    </ul>
+                </div>
+                <div className="hidden md:flex pr-4">
+                    <button className="border-0 bg-transparent text-black mr-4">Sign In</button>
+                    <button className="px-5 py-3">Sign Up</button>
+                </div>
+                <div className="md:hidden">
+                    <MdMenu className="w-8" />
+                </div>
+            </div>
+
+            <ul className="absolute bg-zinc-200 w-full px-8">
+                        <li className="border-b-2 border-zinc-300 w-full">Home</li>
+                        <li className="border-b-2 border-zinc-300 w-full">About</li>
+                        <li className="border-b-2 border-zinc-300 w-full">Pricing</li>
+                        <li className="border-b-2 border-zinc-300 w-full">Platform</li>
+                        <li className="border-b-2 border-zinc-300 w-full">Pricing</li>
+                    </ul>
+
+            <AiOutlineClose />
         </div>
     );
 };
