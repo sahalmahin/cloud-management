@@ -5,6 +5,7 @@ import {
     PaperAirplaneIcon,
     ServerIcon,
 } from '@heroicons/react/solid'
+
 import bgImg from '../assets/cyber-bg.png'
 
 const Hero = () => {
