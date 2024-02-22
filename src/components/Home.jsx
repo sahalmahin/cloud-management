@@ -1,4 +1,5 @@
 import About from "./About";
+import AllInOne from "./AllInOne";
 import Hero from "./Hero";
 import Support from "./Support";
 
@@ -8,6 +9,7 @@ const Home = () => {
             <Hero/>
             <About/>
             <Support/>
+            <AllInOne/>
         </div>
     );
 };
