@@ -1,6 +1,7 @@
 import About from "./About";
 import AllInOne from "./AllInOne";
 import Hero from "./Hero";
+import Pricing from "./Pricing";
 import Support from "./Support";
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
             <About/>
             <Support/>
             <AllInOne/>
+            <Pricing/>
         </div>
     );
 };
