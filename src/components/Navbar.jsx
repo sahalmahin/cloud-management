@@ -8,8 +8,8 @@ const Navbar = () => {
     const handleClick = () => setNav(!nav);
 
     return (
-        <div className="w-screen h-[80px] bg-zinc-200 drop-shadow-lg fixed">
-            <div className="px-2 flex justify-between items-center w-full h-full">
+        <div className="w-screen h-[80px] bg-zinc-200 drop-shadow-lg fixed z-10">
+            <div className="px-2 flex justify-between items-center w-full h-full ">
                 <div className="flex items-center">
                     <h1 className="text-3xl sm:text-4xl font-bold mr-4">Brand.</h1>
                     <ul className="hidden md:flex">
@@ -24,7 +24,7 @@ const Navbar = () => {
                     <button className="border-none bg-transparent text-black mr-4">Sign In</button>
                     <button className="px-5 py-3">Sign Up</button>
                 </div>
-                <div className="md:hidden" onClick={handleClick}>
+                <div className="md:hidden mr-4" onClick={handleClick}>
                     {!nav ? <MdMenu className="w-8" /> : <AiOutlineClose className="w-8" />}
                 </div>
             </div>
